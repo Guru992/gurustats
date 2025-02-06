@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rekordy_speedway_grand_prixes",
+  "info": {
+    "singularName": "rekordy-speedway-grand-prix",
+    "pluralName": "rekordy-speedway-grand-prixes",
+    "displayName": "rekordy-speedway-grand-prix",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TablesWithHeading": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "CoverImageWithText": {
+      "type": "richtext"
+    }
+  }
+}

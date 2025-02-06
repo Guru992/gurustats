@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl lg:text-7xl font-black;
+  }
+  h2 {
+    @apply text-2xl lg:text-4xl font-bold;
+  }
+  h3 {
+    @apply text-xl lg:text-3xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+  h5 {
+    @apply text-base font-bold;
+  }
+  h6 {
+    @apply text-base font-bold;
+  }
+}
+
+/* global.css */
+a {
+  color: blue;
+  text-decoration: underline;
+}
+.nav-item:after {
+  display: block;
+  content: "";
+  width: inherit;
+  border-bottom: solid 3px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: left;
+}
+
+.nav-item:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.button-container:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  transition: all 0.5s;
+}
+table {
+  border: 2px solid white;
+  table-layout: auto;
+  padding: 20px;
+  margin: 20px 0px;
+}
+tr td {
+  padding: 10px 10px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+.rekordy-wrapper img {
+  margin-bottom: 20px;
+}
+.erkbiK div:first-child {
+  white-space: pre-line !important;
+}
+.cJTPDY div:first-child {
+  white-space: pre-line !important;
+}
+.lnOUep {
+  overflow: unset !important;
+  white-space: pre-line !important;
+}
+
+/* .ag-cell.ag-cell-last-left-pinned,
+.ag-pinned-left-header {
+  border-right: 0 !important;
+}
+.ag-horizontal-left-spacer {
+  display: none !important;
+} */
+
+/* Strapi Markdown styles */
+ul {
+  list-style-type: disc;
+  /* this should be the default style */
+}
+
+h1 {
+  font-size: 35px !important;
+}
+
+.blogHeading h1 {
+  font-size: 20px !important;
+}
+.blogHeading li {
+  list-style-type: none;
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+}
+
+.blogHeading ul {
+}
+
+.rekordySubWrapper > figure > table {
+  /* width: 100% !important; */
+  table-layout: auto !important;
+}
+.rekordySubWrapper > figure {
+  display: block;
+  /* max-width: 100% !important; */
+  overflow: auto !important;
+  width: 100% !important;
+  max-width: max-content !important;
+}
+
+.line-break {
+  white-space: pre-wrap !important;
+}
+.rekordySubWrapper > figure > table tbody td {
+  white-space: nowrap !important;
+}
+.rekordySubWrapper > figure > table {
+}
+/* .noborder {
+  border: none !important;
+} */
+/* Add custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #31363f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #76abae;
+  border-radius: 6px;
+  border: 3px solid #31363f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #eeeeee;
+}
+
+/* Animations */
+
+@keyframes pulse-slower {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-slower {
+  animation: pulse-slower 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

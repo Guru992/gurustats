@@ -1,0 +1,35 @@
+{
+  "name": "guru-stats",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ag-grid-community/client-side-row-model": "^31.2.1",
+    "@ag-grid-community/core": "^31.2.1",
+    "@ag-grid-community/react": "^31.2.1",
+    "ag-grid-react": "^31.2.1",
+    "axios": "^1.6.8",
+    "next": "14.1.4",
+    "react": "^18",
+    "react-data-table-component": "^7.6.2",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-markdown": "^9.0.1",
+    "rehype-raw": "^7.0.0",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

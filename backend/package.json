@@ -1,0 +1,75 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "workspaces": [
+    "./src/plugins/strapi-plugin-ckeditor"
+  ],
+  "dependencies": {
+    "@ckeditor/ckeditor5-alignment": "^41.2.1",
+    "@ckeditor/ckeditor5-autoformat": "^41.2.1",
+    "@ckeditor/ckeditor5-autosave": "^41.2.1",
+    "@ckeditor/ckeditor5-basic-styles": "^41.2.1",
+    "@ckeditor/ckeditor5-block-quote": "^41.2.1",
+    "@ckeditor/ckeditor5-code-block": "^41.2.1",
+    "@ckeditor/ckeditor5-easy-image": "^41.2.1",
+    "@ckeditor/ckeditor5-editor-classic": "^41.2.1",
+    "@ckeditor/ckeditor5-essentials": "^41.2.1",
+    "@ckeditor/ckeditor5-find-and-replace": "^41.2.1",
+    "@ckeditor/ckeditor5-font": "^41.2.1",
+    "@ckeditor/ckeditor5-heading": "^41.2.1",
+    "@ckeditor/ckeditor5-highlight": "^41.2.1",
+    "@ckeditor/ckeditor5-horizontal-line": "^41.2.1",
+    "@ckeditor/ckeditor5-html-embed": "^41.2.1",
+    "@ckeditor/ckeditor5-image": "^41.2.1",
+    "@ckeditor/ckeditor5-indent": "^41.2.1",
+    "@ckeditor/ckeditor5-language": "^41.2.1",
+    "@ckeditor/ckeditor5-link": "^41.2.1",
+    "@ckeditor/ckeditor5-list": "^41.2.1",
+    "@ckeditor/ckeditor5-markdown-gfm": "^41.2.1",
+    "@ckeditor/ckeditor5-media-embed": "^41.2.1",
+    "@ckeditor/ckeditor5-page-break": "^41.2.1",
+    "@ckeditor/ckeditor5-paragraph": "^41.2.1",
+    "@ckeditor/ckeditor5-paste-from-office": "^41.2.1",
+    "@ckeditor/ckeditor5-react": "^6.2.0",
+    "@ckeditor/ckeditor5-remove-format": "^41.2.1",
+    "@ckeditor/ckeditor5-special-characters": "^41.2.1",
+    "@ckeditor/ckeditor5-table": "^41.2.1",
+    "@ckeditor/ckeditor5-theme-lark": "^41.2.1",
+    "@ckeditor/ckeditor5-upload": "^41.2.1",
+    "@ckeditor/ckeditor5-word-count": "^41.2.1",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.11",
+    "@reinmar/ckeditor5-maximum-length": "^0.0.1",
+    "@strapi/plugin-cloud": "4.21.0",
+    "@strapi/plugin-i18n": "4.21.0",
+    "@strapi/plugin-users-permissions": "4.21.0",
+    "@strapi/provider-upload-cloudinary": "^4.24.0",
+    "@strapi/strapi": "4.21.0",
+    "better-sqlite3": "8.6.0",
+    "ckeditor5": "^41.2.1",
+    "pg": "^8.11.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-vercel-deploy": "^1.4.0",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "f533c296-edb7-471c-9256-2cbf4801da08"
+  },
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
+  },
+  "license": "MIT"
+}

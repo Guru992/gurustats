@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_text_image_text_with_images",
+  "info": {
+    "displayName": "TextWithImage",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
