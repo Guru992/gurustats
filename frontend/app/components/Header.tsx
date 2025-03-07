@@ -9,9 +9,10 @@ import Link from "next/link";
 import { ICONS } from "../constants";
 
 const navItems = [
+  { title: "ARTYKULY", href: "https://blog.gurustats.pl/" },
   { title: "STRONA GŁÓWNA", href: "/" },
   { title: "O GURUSTATS", href: "/o-gurustats" },
-  { title: "REKORDY GRAND PRIX", href: "/rekordy-speedway-grand-prix" },
+  { title: "REKORDY GRAND PRIX", href: "https://blog.gurustats.pl/rekordy-speedway-grand-prix/" },
   { title: "#TROJKANAKOLEJKE", href: "/trojkanakolejke" },
   { title: "KONTAKT", href: "/contact" },
 ];
@@ -33,10 +34,8 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <ul className="flex space-x-0 sm:space-x-4 text-sm">
             {navItems.map((item, index) => (
-              <Link key={index} href={item.href} className="no-underline">
-                <p
-                  className={` hover:text-lightBlue cursor-pointer nav-item font-semibold ${router == item.href ? "text-lightBlue" : "text-lightGray"
-                    }`}
+              <Link key={index} href={item.href} target={index === 0 ? "_blank" : "_self"} className="no-underline">
+                <p className={` hover:text-lightBlue cursor-pointer nav-item font-semibold ${router == item.href ? "text-lightBlue" : "text-lightGray"}`}
                 >
                   {item.title}
                 </p>
